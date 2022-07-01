@@ -1,0 +1,31 @@
+*{margin: 0;}
+
+/* header {
+  border: 7px dashed red;
+  height: 100px;
+  padding: 16px;
+
+
+} */
+
+main {
+  color:  white;
+  padding: 8px;
+
+  background-color: aqua;
+  background-image: url(https://source.unsplash.com/random);
+  background-repeat: repeat-y; /* imagem se repete só no eixo vertical */
+  background-position: right top;
+  background-size: content; /* content | cover | porcentagem | em | px */
+  background-origin: border-box; /*  */
+  background-clip: content-box;
+  background-attachment: fixed;
+
+  /* shorthand */
+  background: green url() no-repeat right top / cover border-box content-box scroll;
+
+  background: linear-gradient(45deg, red, yellow, green); /* linear | radial */
+
+  /* Aplicar os dois modelos acima ao mesmo tempo */
+  background: linear-gradient(45deg, red, yellow, green), url() no-repeat right top / cover border-box content-box scroll;
+}
