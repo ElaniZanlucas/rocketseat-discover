@@ -1,0 +1,16 @@
+/*  Respeita a altura e largura dadas */
+div {
+  width: 10px;
+  height: 100px;
+  border: 1px solid red;
+  margin: 20px;
+}
+
+/* Altura e largura não se alteram */
+span {
+  width: 100px;
+  height: 100px;
+  border: 1px solid green;
+  /* Só respeita as laterais */
+  margin: 35px;
+}

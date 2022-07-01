@@ -1,0 +1,20 @@
+
+/* Temos 140px de largura da caixa de uma borda à outra, por conta do content-box */
+div {
+  width: 100px;
+  height: 100px;
+  border: 1px solid red;
+  margin: 10%;
+  padding: 0 20px;
+}
+
+/* Temos 100px de largura da caixa de uma borda à outra, por conta do border-box */
+div {
+  width: 100px;
+  height: 100px;
+  border: 1px solid red;
+  margin: 10%;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+

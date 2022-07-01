@@ -1,0 +1,34 @@
+* {
+  margin: 0px;
+}
+
+/* 
+  Display inline soma a margin lateral,
+  por estar uma ao lado da outra 
+  entre elas, ficou 4px
+*/
+
+div, section {
+  border: 1px solid red;
+  width: 100px;
+  height: 100px;
+
+  display: inline;
+
+  margin: 0 2px;
+}
+
+/* 
+  margin colllapsing entre div e section,
+  pois estão uma abaixo da outra
+  bottom e top se juntaram e o espaço entre elas continua 8px
+
+div {
+  margin-bottom: 8px;
+}
+
+section {
+  margin-top: 8px;
+}
+
+*/
