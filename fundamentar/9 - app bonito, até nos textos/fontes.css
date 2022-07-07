@@ -3,4 +3,23 @@ p {
   font-weight: bold;
   font-style: oblique;
   font-size: 1.2em;
+
+  font-variant: small-caps;
+
+  font-stretch: condensed;
+
+  letter-spacing: 4em;
+
+  word-spacing: 2px;
+
+  line-height: 1.2;
+
+  text-transform: capitalize;
+
+  text-decoration: overline wavy yellow;
+
+  text-align: justify;
+
+  text-shadow: 1px 1px 8px red,
+              2px 2px 1px green;
 }
