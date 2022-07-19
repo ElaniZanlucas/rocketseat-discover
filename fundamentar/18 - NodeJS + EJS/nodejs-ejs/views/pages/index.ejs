@@ -1,0 +1,40 @@
+<!-- 
+  Para executar o arquivo: node server
+ -->
+<!-- 
+  Para as alterações feitas em arquivo.js,
+  não é preciso parar o servidor, só atualizar a página.
+  Já parar alterações em aruivo.js,
+  é necessário parar o servidor
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Só funcionam em arquivos.ejs -->
+<%- include('../partials/head'); %>
+
+<body class="container">
+  <%- include('../partials/header'); %>
+  <main>
+    <div class="jumbotron">
+      <h1>Node com EJS</h1>
+      <p>Vamos aprender a trabalhar com arquivos EJS</p>
+      <!-- Renderizar (pegando as tags do ejs) e mostrar o conteúdo (=) -->
+      <p><%= subtitle %></p>
+    </div>
+
+    <!-- Que venha do backend, js e que seja renderizado dentro do ejs -->
+    <ul>
+      <% qualitys.forEach(function(quality){ %>
+        <li>
+          <strong><%= quality.title %></strong> <%= quality.message %>
+        </li>
+      <% }) %>
+      
+    </ul>
+
+  </main>
+
+  <%- include('../partials/footer'); %>
+</body>
+</html>
